@@ -29,7 +29,7 @@ The request from Renee can be summarized as monitoring prices by product and sup
 
 You will start by examining the data you have been supplied with for this task. Since your assigned task is to analyze the price changes of products from past to present, you must identify the relevant fields accordingly. The existing dataset includes fields such as **Category, Date Entered, Product Name, Supplier, Unit Price, Units In Stock, Units On Order, Reorder Level, and Discontinued.**
 
-1. In this dataset, locate the required fields for this business need:** DateEntered, ProductName, Supplier, and UnitPrice.**
+1. In this dataset, locate the required fields for this business need: **DateEntered, ProductName, Supplier, and UnitPrice.**
 
 2. Sort the data based on the **Date Entered** field for each **Product Name**. Examine the **Unit Price** values and take note of the rows that are significantly above or below the average, if any, to be reported in the analysis.
 
