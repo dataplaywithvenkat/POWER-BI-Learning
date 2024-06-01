@@ -380,6 +380,88 @@ Data transformation is a critical step in the data analysis process, enabling yo
 So, the next time you're faced with a mountain of messy data, remember the power of data transformation and the magic of Power Query in Power BI. Now that you've seen the transformative power of Power Query in action, it's time to put your newfound knowledge to work. Go forth and conquer your data challenges and may Power Query be your guiding light in the world of data analysis!
 
 
+# Exercise: Evaluating Data for Transformation
+
+## Introduction
+
+Imagine you've just walked into Adventure Works headquarters as a data analyst, ready to tackle the day's challenges. You get an email notification from your manager. She asks you to evaluate samples and descriptions of diverse data blocks using Microsoft Excel. The data will eventually be loaded into Power BI. As you scan the task, you understand this isn't just about analyzing data; it's about transformation, about making the data ready to answer the right questions.
+
+This exercise will assist you in understanding how to evaluate and transform data at source using Microsoft Excel. You will explore specific scenarios of untidy data and learn how to handle missing values, inconsistent formats, and errors to make your data analysis ready.
+
+By the end of this exercise, you’ll understand how to derive meaningful insights from diverse datasets and answer critical business questions by working with data in the Sales, Inventory, and Customer Feedback CSV files.
+
+## Instructions
+
+1. Download the Inventory, Sales, and Customer Feedback CSV data files to your computer.
+2. Right-click on the Sales Data CSV file and choose `Open with > Excel`. This will open the file in Excel.
+3. Repeat step 2 to open the other two files.
+
+## Sales Dataset: What is the total sales value per product?
+
+First, you are presented with the Sales dataset. It needs to be more organized. It has missing TransactionIDs, SalesAmounts, and text in place of numbers. The analysis question to answer is: “What is the total sales value per product?” To answer this, you'll have to fill in missing SalesAmounts, transform textual entries into numbers, and then aggregate the sales by product. The transformations you implement here will directly feed into the sales trends that Adventure Works will soon uncover.
+
+### Step 1: Addressing Missing TransactionIDs
+
+1. Select the header of the TransactionID column to select the column.
+2. On the Excel ribbon, in the Data tab, select the Filter button.
+3. Select the drop-down arrow on the TransactionID column header and uncheck the box next to Blanks.
+4. Ensure all entries in the column are treated as numerical by setting the data type to Number.
+
+### Step 2: Dealing with SalesAmount Anomalies
+
+1. Select the header of the SalesAmount column to select the column.
+2. Manually go through the column to identify and replace non-numeric values like `four-hundred`. Delete the existing value and type `400` (or the appropriate numeric value).
+3. Replace any missing SalesAmounts with `0` so that these entries are not excluded from the analysis. To replace null or blank cells with `0`, press `CTRL + H` to bring up the Find and Replace dialog box. The Sales data is now clean and consistent, ready for further analysis in Power BI.
+
+## Inventory Dataset: What is the stock level for each bike category?
+
+Next up is the Inventory dataset. Here, you notice missing ProductNames and Categories, and inconsistencies in RestockingFrequency. The task is to figure out: What is the stock level for each bike category? To discover this, you need to standardize Category and fill in missing product details. The transformed data will subsequently support improved inventory management strategies at Adventure Works.
+
+### Step 1: Addressing Missing ProductName
+
+1. Similar to handling missing TransactionIDs in Sales data, you will filter out any rows with missing ProductNames, ensuring your analysis only includes complete records. Select the ProductName column.
+2. Go to the Data tab and select Filter.
+3. Select the drop-down arrow on the ProductName column and deselect Blanks. Click OK.
+
+### Step 2: Handling Missing Category
+
+1. Next, you start evaluating the missing Category data. Select the Category column.
+2. Manually check the column and evaluate the missing entries.
+3. Replace any missing with `No Category Provided`, press `CTRL + H` to bring up the Find and Replace dialog box.
+
+### Step 3: Standardizing RestockingFrequency
+
+1. Inconsistencies in RestockingFrequency can also hinder accurate analysis. Select the RestockingFrequency column.
+2. Press `CTRL + H` to open the Find and Replace dialog box.
+3. In the Find what field, type `30 d`, in the Replace with field, type `30 days`, and select `Match entire cell contents` from the Options menu. Select Replace All. With the Inventory data clean and standardized, you can easily answer the business question “What is the stock level for each bike category?” when loaded into Power BI.
+
+## Customer Feedback Dataset: What is the average feedback score for each product?
+
+Finally, you check the Customer Feedback dataset. Here, FeedbackScores are irregular, dates are erroneous, and some feedback entries are missing altogether. Your analysis question is: What is the average feedback score for each product? This question requires you to correct the irregularities in FeedbackScores, fix erroneous dates, and determine how to treat missing feedback entries. These transformations will give Adventure Works the knowledge it needs to enhance customer satisfaction.
+
+### Step 1: Addressing Missing FeedbackID
+
+1. Begin by filtering out any rows with missing FeedbackIDs in the customer feedback data. Similar to missing TransactionIDs and ProductNames, missing FeedbackIDs can render the corresponding data points anonymous and potentially unreliable. Select the FeedbackID column.
+2. On the Data tab, select Filter.
+3. Select the drop-down arrow on the FeedbackID column and deselect Blanks. Click OK.
+
+### Step 2: Dealing with Inconsistent FeedbackScore
+
+1. Deal with inconsistencies in the FeedbackScore column by setting the data type to Number, ensuring all scores are treated as numerical values.
+2. Manually go through the column to identify and replace non-numeric values like `four-comma-seven`. To do this, double-click on the cell with the non-numeric value, delete the existing value and type `4.7` (or the appropriate numeric value).
+
+### Step 3: Invalid Dates in the FeedbackDate Column
+
+1. Next, address erroneous dates in the FeedbackDate column. Select the FeedbackDate column.
+2. Set the data type to Date on the ribbon, which will force Excel to interpret all entries as dates. To change the Regional Date Format, select the FeedbackDate column and navigate to More Number Formats from the dropdown menu on the ribbon. Select Custom then select the `mm/dd/yyyy` date format.
+3. Manually check the column to identify and replace non-date values like `five May 2023`. To do this, double-click on the cell with the non-numeric value, delete the existing value and type `05 May 2023` (or the appropriate numeric value). Evaluation of the Customer Feedback data is now complete and prepared for future analysis in Power BI.
+
+## Conclusion
+
+While working at Adventure Works headquarters as a data analyst, you have explored the heart of data transformation, using Microsoft Excel to evaluate and analyze complex data blocks. You have learned to address real-world issues such as missing values, inconsistent formats, and errors, transforming raw, disorganized data into information that Adventure Works can use to answer critical business questions. The journey you've embarked upon doesn't stop here. In fact, it is just the beginning. As you refine your evaluation skills and deepen your understanding of data analysis, always remember the importance of evaluating your data. You are not just mastering Power BI; you are harnessing the true power of data!
+
+
+
 
 
 
