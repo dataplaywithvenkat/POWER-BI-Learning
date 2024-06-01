@@ -302,6 +302,84 @@ Develop a data retention policy to manage data storage costs, improve system per
 
 By completing this exercise, you learned about data storage solutions and the role different data types and sources play in the selection of these solutions. You gained hands-on experience evaluating data sources and types, as well as determining an appropriate storage solution, in a business context. As data continues to play an increasingly important role in businesses like Adventure Works, having the right data storage solutions in place is essential.
 
+# Data Transformed in Power BI
+
+### Introduction
+
+You're working in a data analysis role at Adventure Works, and one day, your manager comes to you with a spreadsheet. It’s filled with raw data about sales, production, and inventory. She asks you to find meaningful insights from this data to help optimize the company's processes and make better decisions. You know that transforming this data in Microsoft Power BI using Microsoft Power Query will make it much easier to analyze and extract valuable insights, so you get to work.
+
+This reading assists you in understanding the importance of data transformation in the data analysis process. It explores data transformation functions in Power Query, such as removing duplicates, filling in missing values, and changing data types. You’ll discover how these functions can be combined to suit your specific data transformation needs.
+
+### Data Transformed in Power BI
+
+Data transformation is the process of converting raw data into a more meaningful and usable format. In the context of Power BI, this means taking your raw data, which may be messy, unstructured, or difficult to interpret, and transforming it into a format that is easy to understand and analyze. Power Query is a powerful tool within Power BI that allows you to perform these transformations with ease. The raw data you have been given by your manager at Adventure Works is a massive spreadsheet with thousands of rows containing information about customers, products, sales, and more. However, the data is not in a format that is easy to analyze – there are missing values, duplicate entries, and inconsistencies in the way the data is presented. Let’s examine three stages of the data transformation process.
+
+### Before Transformation
+
+The initial sales data for Adventure Works is a jumbled mess of information. There are columns with missing values, such as customer addresses and product descriptions. Some rows have duplicate entries, while others have inconsistent formatting (e.g., dates in different formats or mixed use of upper and lowercase letters). The data is difficult to understand and analyze in its current state.
+
+### Power Query in Action
+
+To tackle the data issues, you turn to Power Query in Power BI. You use Power Query to clean, organize, and structure the data. You start by removing duplicate entries and filling in missing values using various data transformation functions available in Power Query. You then standardize the formatting of dates, text, and other data elements to ensure consistency across the dataset. You also create new columns to better categorize and classify the data for easier analysis.
+
+### After Transformation
+
+The transformed data now has a more structured and organized format, with no missing values, duplicate entries, or formatting inconsistencies. The new columns created during the transformation process make it easier to understand and analyze the data. With these improvements, you can now perform accurate and efficient data analysis, leading to better insights and more informed decision-making.
+
+### Common Data Transformation Functions in Power Query
+
+Power Query offers numerous transformation functions that cater to various data types and scenarios. Some of the most common transformations include:
+
+- Removing duplicates
+- Filling in missing values
+- Splitting or merging columns
+- Changing data types
+
+These functions can be combined in various ways to suit your specific data transformation needs. To further illustrate the power of data transformation in Power BI, let's take a look at some before and after screenshots.
+
+### Example 1: Data Before Cleaning
+
+![Data before cleaning with a cluttered, unorganized sales data table](images/data-before-cleaning-1.png)
+
+In this initial stage, the sales data table is in disarray. It is difficult to draw any meaningful insights from it due to various issues that hinder its readability and usefulness. Specifically, the table suffers from the following problems:
+
+- **Missing values:** The table contains numerous gaps and incomplete data points. These missing values (depicted as ‘null’) can hinder accurate analysis and interpretation, as they may cause inconsistencies and errors in calculations or aggregations.
+  
+  ![Data table with missing values](images/missing-values.png)
+
+- **Duplicate entries:** The presence of duplicate entries can lead to incorrect conclusions, as they may artificially inflate or skew the results of an analysis. It is essential to identify and remove duplicates to ensure the accuracy and reliability of any data-driven insights.
+  
+  ![Data table with duplicate entries](images/duplicate-entries.png)
+
+- **Inconsistent formatting:** Data formatting inconsistencies, such as varying date formats or text capitalization, can make it challenging to understand and compare data points. Proper formatting is crucial for facilitating data analysis and visualization.
+  
+  ![Data table with inconsistent formatting](images/inconsistent-formatting.png)
+
+### Example 2: Data After Cleaning
+
+![Data after cleaning with a clean, organized sales data table](images/data-after-cleaning-1.png)
+
+### Example 3: Numerical Data Before Cleaning
+
+![Data table before cleaning](images/numerical-data-before-cleaning.png)
+
+This is another example of data before cleaning. A sales table containing numerical data, such as sales price and total amount, formatted as text, making it difficult to perform calculations or create visualizations.
+
+### Example 4: Numerical Data After Cleaning
+
+![Data table after cleaning](images/numerical-data-after-cleaning.png)
+
+The sales table data after cleaning. The numerical data has been converted to the appropriate data types, enabling calculations and visualizations to be created with ease.
+
+These screenshots demonstrate the incredible difference that data transformation can make in your data analysis process. By taking the time to clean, organize, and structure your data using Power Query in Power BI, you can unlock its true potential and gain valuable insights that drive informed decision-making.
+
+### Conclusion
+
+Data transformation is a critical step in the data analysis process, enabling you to convert raw, unstructured data into a more meaningful and usable format. Power Query in Power BI is a powerful tool that allows you to perform these transformations with ease, ultimately leading to more accurate and efficient data analysis. In this example, we've seen how data transformation can drastically improve the quality and usability of your data, using Adventure Works as an example.
+
+So, the next time you're faced with a mountain of messy data, remember the power of data transformation and the magic of Power Query in Power BI. Now that you've seen the transformative power of Power Query in action, it's time to put your newfound knowledge to work. Go forth and conquer your data challenges and may Power Query be your guiding light in the world of data analysis!
+
+
 
 
 
